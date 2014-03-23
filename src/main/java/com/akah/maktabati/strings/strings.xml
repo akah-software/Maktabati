@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<lang name="en">
+		<seq name="title">Maktabati</seq>
+		<seq name="File">File</seq>
+		<seq name="NewBook">New Book...</seq>
+		<seq name="EditBook">Edit Book...</seq>
+		<seq name="DeleteBook">Delete Book</seq>
+		<seq name="Edit">Edit</seq>
+		<seq name="Options">Options</seq>
+	</lang>
+	<lang name="ar">
+		<seq name=""></seq>
+		<seq name=""></seq>
+		<seq name=""></seq>
+		<seq name=""></seq>
+		<seq name=""></seq>
+		<seq name=""></seq>
+	</lang>
+
+</strings>

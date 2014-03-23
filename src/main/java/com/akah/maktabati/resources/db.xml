@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblio>
+	<auteurs>
+		<auteur>
+			<nom></nom>
+		</auteur>
+		<auteur>
+			<nom></nom>
+		</auteur>
+		<auteur>
+			<nom></nom>
+		</auteur>
+	</auteurs>
+	<types>
+		<type></type>
+		<type></type>
+		<type></type>
+	</types>
+	<livres>
+		<livre>
+			<nom></nom>
+			<auteur></auteur>
+			<type></type>
+		</livre>
+		<livre>
+			<nom></nom>
+			<auteur></auteur>
+			<type></type>
+		</livre>
+		<livre>
+			<nom></nom>
+			<auteur></auteur>
+			<type></type>
+		</livre>
+	</livres>
+</biblio>
