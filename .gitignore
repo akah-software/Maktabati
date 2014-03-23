@@ -6,13 +6,15 @@ release.properties
 
 .project
 .classpath
+.metadata
 .settings/
-*.class
+
 
 # Package Files #
 *.jar
 *.war
 *.ear
+*.class
 
 
 # Mobile Tools for Java (J2ME)
