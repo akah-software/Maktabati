@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2014.03.23 à 08:02:45 PM CET 
+// Généré le : 2014.03.24 à 06:53:08 AM CET 
 //
 
 
@@ -37,51 +37,51 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Biblio }
+     * Create an instance of {@link Library }
      * 
      */
-    public Biblio createBiblio() {
-        return new Biblio();
+    public Library createLibrary() {
+        return new Library();
     }
 
     /**
-     * Create an instance of {@link Biblio.Livres }
+     * Create an instance of {@link Library.Books }
      * 
      */
-    public Biblio.Livres createBiblioLivres() {
-        return new Biblio.Livres();
+    public Library.Books createLibraryBooks() {
+        return new Library.Books();
     }
 
     /**
-     * Create an instance of {@link Biblio.Auteurs }
+     * Create an instance of {@link Library.Authors }
      * 
      */
-    public Biblio.Auteurs createBiblioAuteurs() {
-        return new Biblio.Auteurs();
+    public Library.Authors createLibraryAuthors() {
+        return new Library.Authors();
     }
 
     /**
-     * Create an instance of {@link Biblio.Types }
+     * Create an instance of {@link Library.Types }
      * 
      */
-    public Biblio.Types createBiblioTypes() {
-        return new Biblio.Types();
+    public Library.Types createLibraryTypes() {
+        return new Library.Types();
     }
 
     /**
-     * Create an instance of {@link Biblio.Livres.Livre }
+     * Create an instance of {@link Library.Books.Book }
      * 
      */
-    public Biblio.Livres.Livre createBiblioLivresLivre() {
-        return new Biblio.Livres.Livre();
+    public Library.Books.Book createLibraryBooksBook() {
+        return new Library.Books.Book();
     }
 
     /**
-     * Create an instance of {@link Biblio.Auteurs.Auteur }
+     * Create an instance of {@link Library.Authors.Author }
      * 
      */
-    public Biblio.Auteurs.Auteur createBiblioAuteursAuteur() {
-        return new Biblio.Auteurs.Auteur();
+    public Library.Authors.Author createLibraryAuthorsAuthor() {
+        return new Library.Authors.Author();
     }
 
 }

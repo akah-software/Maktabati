@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="biblio">
+  <xs:element name="library">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="auteurs">
+        <xs:element name="authors">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="auteur" maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="author" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type="xs:string" name="nom"/>
+                    <xs:element type="xs:string" name="name"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
@@ -23,14 +22,14 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="livres">
+        <xs:element name="books">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="livre" maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="book" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type="xs:string" name="nom"/>
-                    <xs:element type="xs:string" name="auteur"/>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="author"/>
                     <xs:element type="xs:string" name="type"/>
                   </xs:sequence>
                 </xs:complexType>

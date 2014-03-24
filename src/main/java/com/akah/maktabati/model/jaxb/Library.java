@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2014.03.23 à 08:02:45 PM CET 
+// Généré le : 2014.03.24 à 06:53:08 AM CET 
 //
 
 
@@ -27,17 +27,17 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="auteurs">
+ *         &lt;element name="authors">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="auteur" maxOccurs="unbounded" minOccurs="0">
+ *                   &lt;element name="author" maxOccurs="unbounded" minOccurs="0">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence>
- *                             &lt;element name="nom" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                             &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
  *                       &lt;/complexContent>
@@ -59,18 +59,18 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element name="livres">
+ *         &lt;element name="books">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element name="livre" maxOccurs="unbounded" minOccurs="0">
+ *                   &lt;element name="book" maxOccurs="unbounded" minOccurs="0">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence>
- *                             &lt;element name="nom" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                             &lt;element name="auteur" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                             &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                             &lt;element name="author" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                             &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
@@ -92,42 +92,42 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "auteurs",
+    "authors",
     "types",
-    "livres"
+    "books"
 })
-@XmlRootElement(name = "biblio")
-public class Biblio {
+@XmlRootElement(name = "library")
+public class Library {
 
     @XmlElement(required = true)
-    protected Biblio.Auteurs auteurs;
+    protected Library.Authors authors;
     @XmlElement(required = true)
-    protected Biblio.Types types;
+    protected Library.Types types;
     @XmlElement(required = true)
-    protected Biblio.Livres livres;
+    protected Library.Books books;
 
     /**
-     * Obtient la valeur de la propriété auteurs.
+     * Obtient la valeur de la propriété authors.
      * 
      * @return
      *     possible object is
-     *     {@link Biblio.Auteurs }
+     *     {@link Library.Authors }
      *     
      */
-    public Biblio.Auteurs getAuteurs() {
-        return auteurs;
+    public Library.Authors getAuthors() {
+        return authors;
     }
 
     /**
-     * Définit la valeur de la propriété auteurs.
+     * Définit la valeur de la propriété authors.
      * 
      * @param value
      *     allowed object is
-     *     {@link Biblio.Auteurs }
+     *     {@link Library.Authors }
      *     
      */
-    public void setAuteurs(Biblio.Auteurs value) {
-        this.auteurs = value;
+    public void setAuthors(Library.Authors value) {
+        this.authors = value;
     }
 
     /**
@@ -135,10 +135,10 @@ public class Biblio {
      * 
      * @return
      *     possible object is
-     *     {@link Biblio.Types }
+     *     {@link Library.Types }
      *     
      */
-    public Biblio.Types getTypes() {
+    public Library.Types getTypes() {
         return types;
     }
 
@@ -147,35 +147,35 @@ public class Biblio {
      * 
      * @param value
      *     allowed object is
-     *     {@link Biblio.Types }
+     *     {@link Library.Types }
      *     
      */
-    public void setTypes(Biblio.Types value) {
+    public void setTypes(Library.Types value) {
         this.types = value;
     }
 
     /**
-     * Obtient la valeur de la propriété livres.
+     * Obtient la valeur de la propriété books.
      * 
      * @return
      *     possible object is
-     *     {@link Biblio.Livres }
+     *     {@link Library.Books }
      *     
      */
-    public Biblio.Livres getLivres() {
-        return livres;
+    public Library.Books getBooks() {
+        return books;
     }
 
     /**
-     * Définit la valeur de la propriété livres.
+     * Définit la valeur de la propriété books.
      * 
      * @param value
      *     allowed object is
-     *     {@link Biblio.Livres }
+     *     {@link Library.Books }
      *     
      */
-    public void setLivres(Biblio.Livres value) {
-        this.livres = value;
+    public void setBooks(Library.Books value) {
+        this.books = value;
     }
 
 
@@ -189,12 +189,12 @@ public class Biblio {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="auteur" maxOccurs="unbounded" minOccurs="0">
+     *         &lt;element name="author" maxOccurs="unbounded" minOccurs="0">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence>
-     *                   &lt;element name="nom" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *                   &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
      *             &lt;/complexContent>
@@ -210,39 +210,39 @@ public class Biblio {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "auteur"
+        "author"
     })
-    public static class Auteurs {
+    public static class Authors {
 
-        protected List<Biblio.Auteurs.Auteur> auteur;
+        protected List<Library.Authors.Author> author;
 
         /**
-         * Gets the value of the auteur property.
+         * Gets the value of the author property.
          * 
          * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the auteur property.
+         * This is why there is not a <CODE>set</CODE> method for the author property.
          * 
          * <p>
          * For example, to add a new item, do as follows:
          * <pre>
-         *    getAuteur().add(newItem);
+         *    getAuthor().add(newItem);
          * </pre>
          * 
          * 
          * <p>
          * Objects of the following type(s) are allowed in the list
-         * {@link Biblio.Auteurs.Auteur }
+         * {@link Library.Authors.Author }
          * 
          * 
          */
-        public List<Biblio.Auteurs.Auteur> getAuteur() {
-            if (auteur == null) {
-                auteur = new ArrayList<Biblio.Auteurs.Auteur>();
+        public List<Library.Authors.Author> getAuthor() {
+            if (author == null) {
+                author = new ArrayList<Library.Authors.Author>();
             }
-            return this.auteur;
+            return this.author;
         }
 
 
@@ -256,7 +256,7 @@ public class Biblio {
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence>
-         *         &lt;element name="nom" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
          *   &lt;/complexContent>
@@ -267,35 +267,35 @@ public class Biblio {
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
-            "nom"
+            "name"
         })
-        public static class Auteur {
+        public static class Author {
 
             @XmlElement(required = true)
-            protected String nom;
+            protected String name;
 
             /**
-             * Obtient la valeur de la propriété nom.
+             * Obtient la valeur de la propriété name.
              * 
              * @return
              *     possible object is
              *     {@link String }
              *     
              */
-            public String getNom() {
-                return nom;
+            public String getName() {
+                return name;
             }
 
             /**
-             * Définit la valeur de la propriété nom.
+             * Définit la valeur de la propriété name.
              * 
              * @param value
              *     allowed object is
              *     {@link String }
              *     
              */
-            public void setNom(String value) {
-                this.nom = value;
+            public void setName(String value) {
+                this.name = value;
             }
 
         }
@@ -313,13 +313,13 @@ public class Biblio {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element name="livre" maxOccurs="unbounded" minOccurs="0">
+     *         &lt;element name="book" maxOccurs="unbounded" minOccurs="0">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence>
-     *                   &lt;element name="nom" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *                   &lt;element name="auteur" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *                   &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *                   &lt;element name="author" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *                   &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *                 &lt;/sequence>
      *               &lt;/restriction>
@@ -336,39 +336,39 @@ public class Biblio {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "livre"
+        "book"
     })
-    public static class Livres {
+    public static class Books {
 
-        protected List<Biblio.Livres.Livre> livre;
+        protected List<Library.Books.Book> book;
 
         /**
-         * Gets the value of the livre property.
+         * Gets the value of the book property.
          * 
          * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the livre property.
+         * This is why there is not a <CODE>set</CODE> method for the book property.
          * 
          * <p>
          * For example, to add a new item, do as follows:
          * <pre>
-         *    getLivre().add(newItem);
+         *    getBook().add(newItem);
          * </pre>
          * 
          * 
          * <p>
          * Objects of the following type(s) are allowed in the list
-         * {@link Biblio.Livres.Livre }
+         * {@link Library.Books.Book }
          * 
          * 
          */
-        public List<Biblio.Livres.Livre> getLivre() {
-            if (livre == null) {
-                livre = new ArrayList<Biblio.Livres.Livre>();
+        public List<Library.Books.Book> getBook() {
+            if (book == null) {
+                book = new ArrayList<Library.Books.Book>();
             }
-            return this.livre;
+            return this.book;
         }
 
 
@@ -382,8 +382,8 @@ public class Biblio {
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence>
-         *         &lt;element name="nom" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *         &lt;element name="auteur" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *         &lt;element name="author" type="{http://www.w3.org/2001/XMLSchema}string"/>
          *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string"/>
          *       &lt;/sequence>
          *     &lt;/restriction>
@@ -395,65 +395,65 @@ public class Biblio {
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
-            "nom",
-            "auteur",
+            "name",
+            "author",
             "type"
         })
-        public static class Livre {
+        public static class Book {
 
             @XmlElement(required = true)
-            protected String nom;
+            protected String name;
             @XmlElement(required = true)
-            protected String auteur;
+            protected String author;
             @XmlElement(required = true)
             protected String type;
 
             /**
-             * Obtient la valeur de la propriété nom.
+             * Obtient la valeur de la propriété name.
              * 
              * @return
              *     possible object is
              *     {@link String }
              *     
              */
-            public String getNom() {
-                return nom;
+            public String getName() {
+                return name;
             }
 
             /**
-             * Définit la valeur de la propriété nom.
+             * Définit la valeur de la propriété name.
              * 
              * @param value
              *     allowed object is
              *     {@link String }
              *     
              */
-            public void setNom(String value) {
-                this.nom = value;
+            public void setName(String value) {
+                this.name = value;
             }
 
             /**
-             * Obtient la valeur de la propriété auteur.
+             * Obtient la valeur de la propriété author.
              * 
              * @return
              *     possible object is
              *     {@link String }
              *     
              */
-            public String getAuteur() {
-                return auteur;
+            public String getAuthor() {
+                return author;
             }
 
             /**
-             * Définit la valeur de la propriété auteur.
+             * Définit la valeur de la propriété author.
              * 
              * @param value
              *     allowed object is
              *     {@link String }
              *     
              */
-            public void setAuteur(String value) {
-                this.auteur = value;
+            public void setAuthor(String value) {
+                this.author = value;
             }
 
             /**
