@@ -11,23 +11,22 @@ package com.akah.maktabati.model.jaxb;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour anonymous complex type.
+ * <p>Classe Java pour bookType complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType>
+ * &lt;complexType name="bookType">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="authors" type="{}authorsType"/>
  *         &lt;element name="types" type="{}typesType"/>
- *         &lt;element name="books" type="{}booksType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,20 +36,43 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
+@XmlType(name = "bookType", propOrder = {
+    "name",
     "authors",
-    "types",
-    "books"
+    "types"
 })
-@XmlRootElement(name = "library")
-public class Library {
+public class BookType {
 
+    @XmlElement(required = true)
+    protected String name;
     @XmlElement(required = true)
     protected AuthorsType authors;
     @XmlElement(required = true)
     protected TypesType types;
-    @XmlElement(required = true)
-    protected BooksType books;
+
+    /**
+     * Obtient la valeur de la propriété name.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Définit la valeur de la propriété name.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setName(String value) {
+        this.name = value;
+    }
 
     /**
      * Obtient la valeur de la propriété authors.
@@ -98,30 +120,6 @@ public class Library {
      */
     public void setTypes(TypesType value) {
         this.types = value;
-    }
-
-    /**
-     * Obtient la valeur de la propriété books.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BooksType }
-     *     
-     */
-    public BooksType getBooks() {
-        return books;
-    }
-
-    /**
-     * Définit la valeur de la propriété books.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BooksType }
-     *     
-     */
-    public void setBooks(BooksType value) {
-        this.books = value;
     }
 
 }

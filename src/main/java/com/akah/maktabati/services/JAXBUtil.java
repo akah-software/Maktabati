@@ -7,9 +7,13 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
+import org.apache.log4j.Logger;
+
 import com.akah.maktabati.model.jaxb.Library;
 
 public class JAXBUtil {
+	
+	private static Logger log = Logger.getLogger("logging");
 	
 	public static Library getBiblio() {
 		JAXBContext jc;
@@ -19,8 +23,7 @@ public class JAXBUtil {
 			Unmarshaller unmarshaller = jc.createUnmarshaller();
 			biblio = (Library) unmarshaller.unmarshal(new File("src/main/java/com/akah/maktabati/resources/db.xml"));
 		} catch (JAXBException e) {
-			//TODO log
-			e.printStackTrace();
+			log.debug(e, e);
 		}
 		return biblio;
 	}
@@ -33,8 +36,7 @@ public class JAXBUtil {
 			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 			marshaller.marshal(library, new File("src/main/java/com/akah/maktabati/resources/db.xml"));
 		} catch (JAXBException e) {
-			//TODO log
-			e.printStackTrace();
+			log.debug(e, e);
 		}
 	}
 }

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2014.03.24 à 06:53:08 AM CET 
+// Généré le : 2014.03.26 à 09:33:55 PM CET 
 //
 
 
@@ -45,43 +45,51 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Library.Books }
+     * Create an instance of {@link AuthorsType }
      * 
      */
-    public Library.Books createLibraryBooks() {
-        return new Library.Books();
+    public AuthorsType createAuthorsType() {
+        return new AuthorsType();
     }
 
     /**
-     * Create an instance of {@link Library.Authors }
+     * Create an instance of {@link TypesType }
      * 
      */
-    public Library.Authors createLibraryAuthors() {
-        return new Library.Authors();
+    public TypesType createTypesType() {
+        return new TypesType();
     }
 
     /**
-     * Create an instance of {@link Library.Types }
+     * Create an instance of {@link BooksType }
      * 
      */
-    public Library.Types createLibraryTypes() {
-        return new Library.Types();
+    public BooksType createBooksType() {
+        return new BooksType();
     }
 
     /**
-     * Create an instance of {@link Library.Books.Book }
+     * Create an instance of {@link TypeType }
      * 
      */
-    public Library.Books.Book createLibraryBooksBook() {
-        return new Library.Books.Book();
+    public TypeType createTypeType() {
+        return new TypeType();
     }
 
     /**
-     * Create an instance of {@link Library.Authors.Author }
+     * Create an instance of {@link AuthorType }
      * 
      */
-    public Library.Authors.Author createLibraryAuthorsAuthor() {
-        return new Library.Authors.Author();
+    public AuthorType createAuthorType() {
+        return new AuthorType();
+    }
+
+    /**
+     * Create an instance of {@link BookType }
+     * 
+     */
+    public BookType createBookType() {
+        return new BookType();
     }
 
 }
