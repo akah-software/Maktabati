@@ -15,26 +15,26 @@ public class JAXBUtil {
 	
 	private static Logger log = Logger.getLogger("logging");
 	
-	public static Library getBiblio() {
+	public static Library getLibrary() {
 		JAXBContext jc;
-		Library biblio = null;
+		Library library = null;
 		try {
 			jc = JAXBContext.newInstance("com.akah.maktabati.model.jaxb");
 			Unmarshaller unmarshaller = jc.createUnmarshaller();
-			biblio = (Library) unmarshaller.unmarshal(new File("src/main/java/com/akah/maktabati/resources/db.xml"));
+			library = (Library) unmarshaller.unmarshal(new File("src/main/resources/db.xml"));
 		} catch (JAXBException e) {
 			log.debug(e, e);
 		}
-		return biblio;
+		return library;
 	}
 	
-	public static void setBiblio(Library library) {
+	public static void setLibrary(Library library) {
 		JAXBContext jc;
 		try {
 			jc = JAXBContext.newInstance("com.akah.maktabati.model.jaxb");
 			Marshaller marshaller = jc.createMarshaller();
 			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-			marshaller.marshal(library, new File("src/main/java/com/akah/maktabati/resources/db.xml"));
+			marshaller.marshal(library, new File("src/main/resources/db.xml"));
 		} catch (JAXBException e) {
 			log.debug(e, e);
 		}

@@ -21,7 +21,7 @@ public class Model implements Observable {
 	private ArrayList<Observer> listObserver = new ArrayList<Observer>();
 	
 	public Model() {
-		library = JAXBUtil.getBiblio();
+		library = JAXBUtil.getLibrary();
 	}
 	
 	public void addBook(BookType book) {

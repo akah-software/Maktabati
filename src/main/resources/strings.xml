@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <strings>
 	<lang name="en">
-		<seq name="title">Maktabati</seq>
+		<seq name="Title">Maktabati</seq>
+		
+		<!-- Menu  -->
 		<seq name="File">File</seq>
 		<seq name="NewBook">New Book...</seq>
 		<seq name="EditBook">Edit Book...</seq>
 		<seq name="DeleteBook">Delete Book</seq>
+		<seq name="NewAuthor">New Author...</seq>
+		<seq name="EditAuthor">Edit Author...</seq>
+		<seq name="DeleteAuthor">Delete Author</seq>
+		<seq name="NewType">New Type...</seq>
+		<seq name="EditType">Edit Type...</seq>
+		<seq name="DeleteType">Delete Type</seq>
+		<seq name="NewWorkspace">New Workspace</seq>
+		<seq name="SwitchWorkspace">Switch Workspace</seq>
+		
 		<seq name="Edit">Edit</seq>
+		
 		<seq name="Options">Options</seq>
+		
 	</lang>
 	<lang name="ar">
 		<seq name=""></seq>
